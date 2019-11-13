@@ -368,7 +368,8 @@ Browse [builtin actions](./pkg/plugins/builtin)
 |           || `parameters`: a list of HTTP query parameters, represented as objects composed of `key` and `value`
 |**`subtask`** | Spawn a new task on µTask | `template`: the name of a task template, as accepted through µTask's  API
 |              || `inputs`: a map of named values, as accepted on µTask's API
-|**`notify`**  | Dispatch a notification over a registered channel | `message`: the main payload of the notification
+|**`notify`**  | Dispatch a notification over a registered channel
+|              || `message`: the main payload of the notification
 |              || `fields`: a collection of extra fields to annotate the message
 |              || `backends`: a collection of the backends over which the message will be dispatched (values accepted: named backends as configured in [`utask-cfg`](./config/README.md))
 |**`apiovh`**  | Make a signed call on OVH's public API (requires credentials retrieved from configstore, containing the fields `endpoint`, `appKey`, `appSecret`, `consumerKey`, more info [here](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/))| `path`: http route + query params
